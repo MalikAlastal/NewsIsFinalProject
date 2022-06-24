@@ -155,7 +155,7 @@ class NewsCommentController extends Controller
      */
     public function destroy($id)
     {
-        $comment = NewsComment::where('news_id' , $id)->first();
+        $comment = NewsComment::where('id' , $id)->first();
 
         if (!$comment){
             $msg = 'خطأ في تعديل البيانات';
